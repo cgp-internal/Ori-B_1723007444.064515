@@ -1,0 +1,33 @@
+{
+    "app.py": {
+        "description": "Main entry point for the Flask web application. Sets up the Flask server, defines routes, and starts the server.",
+        "dependencies": {
+            "templates/index.html": [],
+            "models/pipes.py": [
+                "run_pipe"
+            ]
+        }
+    },
+    "templates/index.html": {
+        "description": "HTML template for the form with a single field, 'prompt'.",
+        "exposes": []
+    },
+    "models/pipes.py": {
+        "description": "Contains functions for facilitating further processing of the received prompt.",
+        "exposes": [
+            "run_pipe"
+        ]
+    },
+    "requirements.txt": {
+        "description": "List of project dependencies, including Flask."
+    },
+    ".gitignore": {
+        "description": ".gitignore with virtual environment and cache files"
+    },
+    "run.sh": {
+        "description": "bash run script, should: install Python, init a project, install Flask"
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide"
+    }
+}
